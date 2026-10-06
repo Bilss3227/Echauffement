@@ -37,12 +37,28 @@ class Program
         string name = Console.ReadLine();
         Console.WriteLine("Quel est ton age?");
         string age = Console.ReadLine();
-
-        string age = Console.ReadLine();
         int age = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Tu est majeur");if (>= 18)
-        Console.WriteLine("Tu est mineur");if (<= 18)
+        if (age >= 18)
+        Console.WriteLine("Tu est majeur");
+        else
+        Console.WriteLine("Tu est mineur");
         
-    }
+        Console.WriteLine("Combien d'argent as tu?");
+        double argent = Convert.ToDouble(Console.ReadLine());
 
-}
+        Console.WriteLine("1. EPEE:10 euro");
+        Console.WriteLine("2. ARC :15 euro");
+        Console.WriteLine("3. HACHE:20 euro");
+        Console.WriteLine("4. PISTOLET:150 euro");
+
+        Console.WriteLine("Choisis une arme de 1 a 4");
+        int choix = Convert.ToInt32(Console.ReadLine());
+        if(choix == 1)
+        Console.WriteLine("Tu as choisis l'eppe");
+        if(choix == 2)
+        Console.WriteLine("Tu as choisis l'arc");
+        if(choix == 3)
+        Console.WriteLine("Tu as choisis la hache");
+        if(choix == 4)
+        Console.WriteLine("Tu as choisis le pistolet");
+        
