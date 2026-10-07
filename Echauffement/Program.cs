@@ -34,17 +34,21 @@ class Program
         Console.WriteLine("je m'appel bilale et mon jeu préféré est God of war");
        
         Console.WriteLine("Quel est ton pernom?");
-        string name = Console.ReadLine();
+        string name = Convert.ToString(Console.ReadLine());
         Console.WriteLine("Quel est ton age?");
-        string age = Console.ReadLine();
+       
         int age = Convert.ToInt32(Console.ReadLine());
-        if (age >= 18)
-        Console.WriteLine("Tu est majeur");
+        if (age < 18)
+        {
+            Console.WriteLine("Tu est mineur");
+        }
         else
-        Console.WriteLine("Tu est mineur");
-        
+        {
+            Console.WriteLine("Tu est majeur");
+        }
+
         Console.WriteLine("Combien d'argent as tu?");
-        double argent = Convert.ToDouble(Console.ReadLine());
+        float argent = Convert.ToSingle(Console.ReadLine());
 
         Console.WriteLine("1. EPEE:10 euro");
         Console.WriteLine("2. ARC :15 euro");
@@ -54,11 +58,21 @@ class Program
         Console.WriteLine("Choisis une arme de 1 a 4");
         int choix = Convert.ToInt32(Console.ReadLine());
         if(choix == 1)
-        Console.WriteLine("Tu as choisis l'eppe");
-        if(choix == 2)
-        Console.WriteLine("Tu as choisis l'arc");
-        if(choix == 3)
-        Console.WriteLine("Tu as choisis la hache");
-        if(choix == 4)
-        Console.WriteLine("Tu as choisis le pistolet");
-        
+        {
+            Console.WriteLine("Tu as choisis l'eppe");
+        }
+
+        if (choix == 2)
+        {
+            Console.WriteLine("Tu as choisis l'arc");
+        }
+
+        if (choix == 3)
+        {
+            Console.WriteLine("Tu as choisis la hache");
+        }
+
+        if (choix == 4)
+        {
+            Console.WriteLine("Tu as choisis le pistolet");
+        }        
